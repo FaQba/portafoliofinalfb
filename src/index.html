@@ -18,15 +18,24 @@
     </div>
     <div class="top-right">
       <div class="dropdown">
-        <button class="dropdown-button">Redes Sociales</button>
+        <button class="social-dropdown-button">Redes Sociales</button>
         <div class="dropdown-content">
           <a href="https://twitter.com/facundo_barral">Twitter</a>
           <a href="https://www.instagram.com/facundobarral/">Instagram</a>
+         </div>
         </div>
-      </div>
-      <button class="login-button">Iniciar Sesión</button>
+        <div class="dropdown">
+          <button class="login-dropdown-button" onclick="toggleLoginDropdown()">Iniciar Sesión</button>
+          <div id="login-dropdown-content" class="dropdown-content">
+            <form>
+              <input type="text" placeholder="Nombre de usuario" required>
+              <input type="password" placeholder="Contraseña" required>
+              <button type="submit">Ingresar</button>
+            </form>
+          </div>
+        </div>
     </div>
-  </header>
+    </header>
     <section id="sobre-mi">
       <div class="container">
         <h2>Sobre mí</h2>
